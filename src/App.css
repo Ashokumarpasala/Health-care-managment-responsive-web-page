@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+.main {
+    background-image: url('https://aihms.in/blog/wp-content/uploads/2020/04/healthcare3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Mobile screens */
+@media (max-width: 767px) {
+    .d-flex {
+      flex-direction: column;
+    }
+    .logo {
+        width: 200px !important;
+    }
+    .home h5{
+        display: none !important;
+    }
+    .home img {
+        display: none !important;
+    }
+    .main{
+        height: 350px;
+        width: 100%;
+        z-index: 1 !important;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    .maincon {
+        font-size: 20px !important;
+        text-align: start;
+        font-weight: bold;
+    }
+    .layer{
+        z-index: 2 !important;
+    }
+    .bmihead{
+      font-size: 30px !important;
+    }
+    .hel{
+        width: 100% !important;
+    }
+    .headings{
+        width: 370px !important;
+    }
+
+
+  
+ 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
